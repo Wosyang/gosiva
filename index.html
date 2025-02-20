@@ -230,15 +230,53 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-white py-8 border-t border-gray-300 mx-auto">
-        <div class="container mx-auto grid grid-cols-4 gap-3 items-start">
+    <div class="container mx-auto">
+        <!-- Mobile Layout (stacked vertically) -->
+        <div class="flex flex-col space-y-4  md:hidden">
+            <!-- First Row: Logo, Contact Person, and Alamat -->
+            <div class="flex flex-col items-center space-y-4">
+                <!-- Logo Section -->
+                <div class="flex flex-col items-center space-y-3">
+                    <img src="src/logo/logo-gsm.png" alt="Logo GSM" class="h-16 md:h-24">
+                    <img src="src/logo/logo-tgs.png" alt="Logo TGS" class="h-16 md:h-24">
+                </div>
+
+                <!-- Contact and Address Section -->
+                <div class="text-black text-center">
+                    <h4 class="font-bold mb-2">Contact Person:</h4>
+                    <p>CP1: +6285330532218</p>
+                    <p>CP2: +6281359165245</p>
+                    <h4 class="font-bold mt-4">Alamat:</h4>
+                    <p>JL. Raya Nasional III Jarakan, Dusun Krajan RT 003/RW 002, Jarakan, Gondang, Tulungagung</p>
+                </div>
+            </div>
+
+            <!-- Second Row: Contact Us -->
+            <div class="text-center">
+                <h4 class="font-bold mb-2">Contact Us:</h4>
+                <div class="flex gap-3 justify-center">
+                    <a href="mailto:ptgosivasuksesmandiri@gmail.com" target="_blank">
+                        <img src="src/logo/gmail.svg" alt="gmail" class="w-12 h-12 rounded-full">
+                    </a>
+                    <a href="http://wa.me/6285330532218" target="_blank">
+                        <img src="src/logo/phone1.svg" alt="CP1" class="w-16 h-16 rounded-full">
+                    </a>
+                    <a href="http://wa.me/6281359165245" target="_blank">
+                        <img src="src/logo/phone2.svg" alt="CP2" class="w-16 h-16 rounded-full">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Layout (original horizontal layout) -->
+        <div class="hidden md:grid md:grid-cols-4 md:gap-3 md:items-start">
             <!-- Logo Section -->
             <div class="flex flex-col items-center space-y-3">
                 <img src="src/logo/logo-gsm.png" alt="Logo GSM" class="h-16 md:h-24">
                 <img src="src/logo/logo-tgs.png" alt="Logo TGS" class="h-16 md:h-24">
             </div>
-    
+
             <!-- Contact Section -->
             <div class="col-span-2 text-black">
                 <h4 class="font-bold mb-2">Contact Person:</h4>
@@ -247,10 +285,10 @@
                 <h4 class="font-bold mt-4">Alamat:</h4>
                 <p>JL. Raya Nasional III Jarakan, Dusun Krajan RT 003/RW 002, Jarakan, Gondang, Tulungagung</p>
             </div>
-    
+
             <!-- Social Media Section -->
             <div>
-                <h4 class="font-bold mb-2">Contact Us:</h3>
+                <h4 class="font-bold mb-2">Contact Us:</h4>
                 <div class="flex gap-3">
                     <a href="mailto:ptgosivasuksesmandiri@gmail.com" target="_blank">
                         <img src="src/logo/gmail.svg" alt="gmail" class="w-10 h-10 rounded-full">
@@ -264,7 +302,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
